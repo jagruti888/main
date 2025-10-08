@@ -1,0 +1,88 @@
+
+ .glow-border::before
+     {
+      content: '';
+      position: absolute;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      background-image:linear-gradient(to bottom, #e08567bb, #e06c46a6, #ff8f6ad7, #e99c82, #eca48cd0);
+      background-size: 500%;
+      z-index: -1;
+      filter: blur(10px);
+      animation: borderGlow 4s linear infinite;
+      border-radius: 16px;
+    }
+
+       .glow-border
+     {
+      position: relative;
+      padding: 2rem;
+      background: rgb(255, 238, 238);
+      border-radius: 15px;
+      z-index: 1;
+      overflow: hidden;
+      box-shadow: #a3a3a3d0;
+    }
+
+
+
+/* Input, textarea, select hover */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover 
+{
+ border: 1px solid #cb8670 !important;
+  transition: border 0.2s ease-in-out;
+}
+
+/* Input, textarea, select focus (clicked/active) */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+ border: 3px solid #cb8670 !important;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Checkbox and radio hover */
+input[type="checkbox"]:hover,
+input[type="radio"]:hover 
+{
+  accent-color: #cb8670 !important;
+  cursor: pointer;
+}
+
+/* Checkbox and radio when focused/clicked */
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: none;
+   accent-color: #cb8670 !important;
+  box-shadow: 0 0 0 2px rgba(203, 134, 112, 0.3);
+}
+
+/* Checkbox and radio when checked */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked 
+{
+  accent-color: #cb8670 !important;
+}
+
+/* Hover box wrapper */
+.form-control.hover-box:hover 
+{
+  border: 2px solid #cb8670 !important;
+  background-color: #f9f3f2;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+
+
